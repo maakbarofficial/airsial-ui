@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AirSialLogo from "../../assets/Airsial.gif";
 
 const Home = () => {
@@ -57,8 +58,8 @@ const Home = () => {
                     </span>
                     , AirSial UI adapts to your design vision effortlessly.
                 </p>
-                <a
-                    href="#"
+                <Link
+                    to={"/components"}
                     className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
                 >
                     Get started
@@ -77,7 +78,7 @@ const Home = () => {
                             d="M1 5h12m0 0L9 1m4 4L9 9"
                         />
                     </svg>
-                </a>
+                </Link>
             </div>
             <div className="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0" />
         </div>
